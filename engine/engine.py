@@ -1,5 +1,5 @@
-import servicable
+from abc import ABC
 
-class Engine(servicable.Servicable):
+class Engine(ABC):
     def needs_service(self):
         pass

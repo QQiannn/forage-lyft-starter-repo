@@ -1,5 +1,5 @@
-from servicable import Servicable
+from abc import ABC
 
-class Battery(Servicable):
+class Battery(ABC):
     def needs_service(self):
         pass

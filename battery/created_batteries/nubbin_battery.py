@@ -1,8 +1,8 @@
 from dateutil.relativedelta import relativedelta
 
-from battery import battery
+from battery.battery import Battery
 
-class NubbinBattery(battery.Battery):
+class NubbinBattery(Battery):
     def __init__(self, current_date, last_service_date):
         self.last_service_date = last_service_date
         self.current_date = current_date
