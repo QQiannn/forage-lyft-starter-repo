@@ -10,4 +10,4 @@ class SpindlerBattery(Battery):
     def needs_service(self):
         difference = relativedelta(self.current_date, self.last_service_date)
 
-        return difference.years >= 2
+        return difference.years >= 3
